@@ -61,6 +61,9 @@ module.exports = {
       indicators.add('sma_50', 'sma', undefined, { length: 50 });
       indicators.add('ema_55', 'ema', undefined, { length: 55 });
       indicators.add('ema_200', 'ema', undefined, { length: 200 });
+      indicators.add('ema_8', 'ema', undefined, { length: 8 });
+      indicators.add('ema_34', 'ema', undefined, { length: 34 });  
+      indicators.add('ema_89', 'ema', undefined, { length: 89 });          
       indicators.add('rsi', 'rsi', undefined, { length: 14 });
       indicators.add('cci', 'cci', undefined, { length: 20 });
       indicators.add('ao', 'ao');

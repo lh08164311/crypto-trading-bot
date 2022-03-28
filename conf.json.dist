@@ -52,13 +52,6 @@
             "token": null
         }
     },
-    "log": {
-      "telegram": {
-        "chatId": null,
-        "token": null,
-        "level": "debug"
-      }
-    },
     "webserver": {
         "ip": "0.0.0.0",
         "port": 8080,
@@ -78,7 +71,7 @@
         "retry_ms": null
     },
     "dashboard":{
-        "periods": ["15m", "1h"]
+        "periods": ["5m","15m", "1h","4h","1d","30m"]
     },
     "desks": [
         {
