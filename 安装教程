@@ -1,0 +1,56 @@
+
+
+sudo apt-get update
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt-get install python3.6
+
+
+若上述运行sudo add-apt-repository ppa:deadsnakes/ppa 出现 “bash: add-apt-repository: command not found” 则先运行：
+sudo apt-get install -y software-properties-common
+参考链接 https://blog.csdn.net/qq_42693848/article/details/88900553
+
+
+sudo apt-get install python3.6-dev
+
+
+为python3.6安装对应的pip
+curl https://bootstrap.pypa.io/ez_setup.py -o - | python3.6 && python3.6 -m easy_install pip
+
+
+python3.6 -m pip install numpy -i https://pypi.doubanio.com/simple
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xzvf ta-lib-0.4.0-src.tar.gz
+cd ta-lib
+./configure --prefix=/usr
+make
+sudo make install
+cd ..
+pip install TA-Lib
+
+
+生成制定python版本的软链接
+ln -s /usr/bin/python3.x /usr/bin/python
+
+node js 12 安装
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+ 
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+ 
+sudo apt install nodejs
+
+查看安装是否成功
+node -v
+v12.18.3
+npm -v
+6.14.6
+
+sqlite3的安装
+sudo apt-get install sqlite3
+查看下安装好的sqlite的版本
+sqlite3 -version
+
+
+Install build tools
+sudo apt-get install build-essential
